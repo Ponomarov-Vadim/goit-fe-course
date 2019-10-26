@@ -85,6 +85,9 @@ main {
 }
 
 /* Header section ^^^ */
+
+/* Banner section */
+
 .banner {
     position: relative;
     margin: 0 auto;
@@ -96,7 +99,7 @@ main {
             rgba(0, 0, 2, 0.52)), url('../img/top-bg.png');
     /*look this place*/
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -185,6 +188,10 @@ main {
     cursor: pointer;
 }
 
+/* Banner section ^^^ */
+
+/* collection section */
+
 .section-header {
     text-align: center;
     height: 34px;
@@ -208,21 +215,22 @@ main {
     margin: 32px auto 0;
 }
 
-.featured {
+.collection {
     list-style: none;
     margin: 0;
     padding: 0;
     vertical-align: top;
 }
 
-/* Featured section */
-.featured-prod {
+.collection-prod {
     font-size: 0;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 100px;
 
 }
+
+/* Overlay section */
 
 .overlay {
     position: absolute;
@@ -259,8 +267,8 @@ main {
     background-color: #1abc9c;
 }
 
-.featured-item:hover .overlay,
-.featured-item:focus .overlay {
+.collection-item:hover .overlay,
+.collection-item:focus .overlay {
     background-color: rgba(0, 0, 0, 0.55);
     border: 10px solid rgba(255, 255, 255, 0.77);
     opacity: 1;
@@ -301,7 +309,9 @@ main {
     background-position: center;
 }
 
-.featured-item {
+/* Overlay section ^^^^ */
+
+.collection-item {
     position: relative;
     display: inline-block;
     font-size: 0;
@@ -312,17 +322,17 @@ main {
     text-align: center;
 }
 
-.featured-item:last-of-type {
+.collection-item:last-of-type {
     margin-right: 0;
 }
 
-.featured-item--img {
+.collection-item--img {
     margin: 0;
     padding: 0;
 
 }
 
-.featured-item--name {
+.collection-item--name {
     display: inline-block;
     text-align: left;
     color: #ffffff;
@@ -338,7 +348,7 @@ main {
     padding: 0 0 0 14px;
 }
 
-.featured-item--price {
+.collection-item--price {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -355,25 +365,21 @@ main {
 }
 
 
-/* Featured section ^^^ */
+/* Collection section ^^^ */
 
-.featured-item:hover .featured-item--name,
-.featured-item:focus .featured-item--name {
+.collection-item:hover .collection-item--name,
+.collection-item:focus .collection-item--name {
     background-color: #1abc9c;
 }
 
 
 
-.featured-item:hover .featured-item--price,
-.featured-item:focus .featured-item--price {
+.collection-item:hover .collection-item--price,
+.collection-item:focus .collection-item--price {
     background-color: #7fd9c8;
 }
 
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
-}
+/* Footer section */
 
 .page-footer {
     min-height: 88px;
