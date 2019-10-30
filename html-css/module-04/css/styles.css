@@ -133,7 +133,6 @@ body {
 .featured-item--img {
     margin: 0;
     padding: 0;
-
 }
 
 .featured-item:nth-child(4n) {

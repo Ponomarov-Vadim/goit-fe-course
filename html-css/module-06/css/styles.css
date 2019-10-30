@@ -40,7 +40,7 @@ main {
 }
 
 .menu {
-    width: 490px;
+    min-width: 490px;
     list-style: none;
     margin: 0;
     padding: 0;
