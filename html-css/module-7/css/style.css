@@ -1,9 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
 .wrapper {
   width: 940px;
   margin: 0 auto;
 }
 
+/* Header area*/
 .site-nav {
+  padding: 44px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -26,7 +42,6 @@
 
 .menu-item {
   list-style: none;
-
 }
 
 .menu-link {
@@ -37,4 +52,184 @@
   font-weight: 400;
   line-height: 41px;
   text-transform: uppercase;
+  transition: color 200ms linear;
 }
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #fed136;
+}
+
+/* Header area ^^^^ */
+/* Main area */
+
+.services-section {
+  padding: 120px 0 0 0;
+}
+
+.section-header {
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.service-header {
+  width: 193px;
+  color: #222222;
+  margin-bottom: 19px;
+}
+
+.contact-header {
+  width: 258px;
+  color: #ffffff;
+}
+
+.section-text {
+  margin: 0 auto 50px;
+  width: 296px;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 120px 0;
+  margin: 0;
+}
+
+.services-item {
+  position: relative;
+  width: 290px;
+  padding-top: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loked-icon:before {
+  background-image: url(../img/Icon-Locked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket-icon:before {
+  background-image: url(../img/Icon-Basket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.laptop-icon:before {
+  background-image: url(../img/Icon-Laptop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-item:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 30px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  height: 68px;
+  width: 68px;
+}
+
+.services-header {
+  margin: 0 0 18px 0;
+  padding: 18px 0 0 0;
+  display: inline;
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.45px;
+}
+
+.services-text {
+  margin: 0;
+  padding: 0;
+  color: #777777;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+.contact-section {
+  padding: 110px 0 114px 0;
+  background-color: #222222;
+}
+
+.contact-form {
+  height: 455px;
+}
+
+.contact-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+.input-info {
+  margin: 0 0 30px;
+  padding: 0;
+  width: 455px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+.contact-form input[type='email']:invalid,
+.contact-form input[type='text']:required:invalid {
+ 
+  outline-color: red;
+}
+
+.contact-form input[type='email']:valid,
+.contact-form input[type='text']:required:valid {
+ 
+  outline-color: green;
+}
+
+.input-message {
+  width: 100%;
+  height: 210px;
+}
+
+.input-message:invalid {
+  outline-color: red;
+}
+
+.input-message:valid {
+  outline-color: green;
+}
+
+.send-button {
+  margin: 0 auto;
+  display: block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+}
+
+/* Main area ^^^^ */
