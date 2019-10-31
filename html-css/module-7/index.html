@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif:400i&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -22,8 +26,10 @@
     </header>
     <main>
       <section class="services-section wrapper">
-        <h2 class="section-header service-header">services</h2>
-        <h3 class="section-text">Proin iaculis purus consequat sem cure.</h3>
+        <div class="section-header">
+          <h2 class="service-header section-header-style">services</h2>
+          <h3 class="section-text">Proin iaculis purus consequat sem cure.</h3>
+        </div>
         <ul class="services-list">
           <li class="services-item basket-icon">
             <h4 class="services-header">E-Commerce</h4>
@@ -53,47 +59,52 @@
       </section>
 
       <section class="contact-section">
-        <div class="contact-section-content wrapper">
-          <h2 class="section-header contact-header">contact us</h2>
-          <h3 class="section-text">Proin iaculis purus consequat sem cure.</h3>
+        <div class="wrapper">
+          <div class="bg-image"></div>
+          <div class="section-header">
+            <h2 class="contact-header section-header-style">contact us</h2>
+            <p class="section-text">Proin iaculis purus consequat sem cure.</p>
+          </div>
           <form action="#" class="contact-form">
             <div class="contact-area">
-            <div class="user-info">
-            <input
-              class="input-info"
-              type="text"
-              name="name"
-              id="user_name"
-              placeholder="your name*"
-              required
-            />
-            <input
-              class="input-info"
-              type="email"
-              name="email"
-              id="user_mail"
-              placeholder="your e-mail*"
-              required
-            />
-            <input
-              class="input-info"
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="subject"
-            />
-          </div>
-            <textarea
-              class="input-message"
-              name="message"
-              id="message_area"
-              cols="30"
-              rows="10"
-              placeholder="your message*"
-              required
-            ></textarea>
-          </div>
-            <button class="send-button" value="send" id="send_form">Send Message</button>
+              <div class="user-info">
+                <input
+                  class="input-info input-style"
+                  type="text"
+                  name="name"
+                  id="user_name"
+                  placeholder="your name*"
+                  required
+                />
+                <input
+                  class="input-info input-style"
+                  type="email"
+                  name="email"
+                  id="user_mail"
+                  placeholder="your e-mail*"
+                  required
+                />
+                <input
+                  class="input-info input-style"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="subject"
+                />
+              </div>
+              <textarea
+                class="input-message input-style"
+                name="message"
+                id="message_area"
+                cols="10"
+                rows="10"
+                placeholder="your message*"
+                required
+              ></textarea>
+            </div>
+            <button class="send-button" value="send" id="send_form">
+              Send Message
+            </button>
           </form>
         </div>
       </section>
