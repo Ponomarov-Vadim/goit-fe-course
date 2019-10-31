@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+
+/* Header area*/
+.site-header {  
+  margin: 0 auto;
+  text-align: center;
+}
+
+.authorize-link {
+  
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.log-in {
+  display: inline-block;
+  text-align: center;
+}
+
+.sign-up {
+  display: inline-block;
+  text-align: center;
+  width: 90px;
+  height: 36px;
+  border: 2px solid #ffffff;
+  background-color: #1a1915;
+  border-radius: 25px;
+}
+
+.site-logo {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-section {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  /* font-size: 30px; for media */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-text {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 18px; for media */
+  font-weight: 300;
+}
+
+/* Header area ^^^^ */
+
+/* Main area */
+.partner-item {
+  text-align: center;
+}
+
+.partner-section-header {
+  text-align: center;
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.partner-name {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.partner-info {
+  color: #666666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header-button {
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  /* min-width: 225px; for media */
+  height: 40px;
+  background-color: #ff4e50;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.partners-button {
+  display: block;
+  margin: 0 auto;
+  color: #ff4e50;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  /* width: 193px; for media */
+  height: 40px;
+  border: 2px solid #ff4e50;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+/* Main area ^^^^ */
