@@ -39,9 +39,7 @@ body {
   font-weight: 400;
   src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
     url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .wrapper {
@@ -128,7 +126,7 @@ body {
 
 .section-text {
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 0 50px;
   color: #777777;
   font-family: 'Noto Serif', serif;
   font-weight: 400;
