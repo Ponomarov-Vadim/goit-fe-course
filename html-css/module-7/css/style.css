@@ -257,16 +257,18 @@ body {
   margin: 0;
 }
 
-.contact-form input[type='email']:invalid,
-.contact-form input[type='text']:required:invalid {
-
+input[type='email']:focus:invalid,
+input[name='name']:focus:invalid,
+textarea[name='message']:focus:invalid {
   outline-color: red;
+  transition: outline-color .5s;
 }
 
-.contact-form input[type='email']:valid,
-.contact-form input[type='text']:required:valid {
-
+input[type='email']:focus:valid,
+input[name='name']:focus:valid,
+textarea[name='message']:focus:valid {
   outline-color: green;
+  transition: outline-color .4s;
 }
 
 .user-info {
@@ -274,12 +276,13 @@ body {
   margin-right: 30px;
 }
 
-.input-message:invalid {
-  outline-color: red;
-}
-
-.input-message:valid {
-  outline-color: green;
+.input-message,
+.input-info {
+  box-sizing: border-box;
+  display: block;
+  outline: 3px solid transparent;
+  outline-offset: -2px;
+  transition: outline-color 0.1s;  
 }
 
 .send-button {
