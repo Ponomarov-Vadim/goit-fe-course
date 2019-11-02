@@ -1,11 +1,153 @@
-@media screen and (min-width: 320px) {
-
-}
-
 @media screen and (min-width: 768px) {
+    .wrapper {
+        width: 670px;
+    }
 
+    header {
+        background-image: url(../img/header_image1440.jpg);
+        width: 100%;
+    }
+
+    .site-header {
+        margin-bottom: 100px;
+    }
+
+    .header-section {
+        margin-bottom: 40px;
+    }
+
+    .header-text {
+        margin-bottom: 34px;
+    }
+
+    .header-content-section {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .site-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 38px;
+    }
+
+    .header-button {
+        min-width: 226px;
+    }
+
+    .partners-button {
+        min-width: 193px;
+    }
+
+    .partner-list {
+        margin: 0 auto;
+        width: 532px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    .partner-item {
+        vertical-align: top;
+        width: 236px;
+        padding: 0 14px;
+    }
+
+    .header-section {
+        font-size: 52px;
+        line-height: 52px;
+    }
+
+    .header-text {
+        font-size: 24px;
+    }
+
+    .partner-list {
+        min-height: 492px;
+    }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 767px) {
 
+    .authorize {
+        padding-top: 20px;
+        margin-bottom: 114px;
+    }
+
+    .site-header {
+        margin-bottom: 38px;
+        background-size: contain;
+    }
+
+    .header-section {
+        margin-bottom: 20px;
+    }
+
+    .header-text {
+        margin-bottom: 20px;
+    }
+
+    .partner-section {
+        padding-top: 70px;
+    }
+
+    .partner-section-header {
+        margin-bottom: 16px;
+    }
+
+    .partner-list {
+        margin-bottom: 30px;
+    }
+
+    .partner-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .partner-img {
+        margin-bottom: 20px;
+    }
+
+    .partner-name {
+        margin-bottom: 18px;
+    }
+
+    .partners-button {
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 939px) {
+    
+    .partner-section {
+        padding-top: 72px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .wrapper {
+        width: 942px;
+    }
+
+    .site-header {
+        margin-bottom: 100px;
+    }
+
+    .partner-section {
+        padding-top: 70px;
+        padding-bottom: 72px;
+    }
+
+    .partner-list {
+        padding-top: 32px;
+        padding-bottom: 38px;
+        width: 942px;
+        flex-wrap: nowrap;
+    }
+
+    .partner-list {
+        min-height: 234px;
+    }
 }

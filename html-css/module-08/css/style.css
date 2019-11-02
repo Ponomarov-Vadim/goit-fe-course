@@ -19,7 +19,7 @@ ul {
 }
 
 li {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -45,30 +45,76 @@ font-family: 'Montserrat', sans-serif; */
 
 .wrapper {
   width: 320px;
-  margin: 0 auto;
+  min-height: 540px;
+  padding: 0 14px;
+  margin: auto;
 }
 
 header {
-  background-color: black;
+  position: relative;
+  min-height: 540px;
+  width: 320px;
+  margin: auto;
+  background-image: url(../img/header_image_mobile320.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.18;
+}
+
+
 /* Header area*/
-.site-header {  
+.site-header {
   margin: 0 auto;
   text-align: center;
 }
 
+.header-content-section {
+ margin: 0 auto;
+}
+
+.header-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .authorize-link {
-  
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
+  line-height: 28px;
+  transition: color .3s linear;
+}
+
+.authorize-link:hover {
+  color: #ff4e50;  
+  transition: color .3s linear;
+}
+
+.sign-up:hover {
+  border-color: #ff4e50;
+  color: #ff4e50;
+  transition: color, border-color .3s linear;
 }
 
 .log-in {
   display: inline-block;
   text-align: center;
+  margin-right: 20px;
 }
 
 .sign-up {
@@ -77,11 +123,14 @@ header {
   width: 90px;
   height: 36px;
   border: 2px solid #ffffff;
-  background-color: #1a1915;
+  background-color: transparent;
   border-radius: 25px;
+  transition: color, border-color .3s linear;
 }
 
 .site-logo {
+  position: relative;
+  transform: translateY(15%);
   text-align: center;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -89,13 +138,15 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .header-section {
   text-align: center;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  /* font-size: 30px; for media */
+  font-size: 30px;
+  /* for media */  
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -104,15 +155,20 @@ header {
   text-align: center;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  /* font-size: 18px; for media */
+  font-size: 18px;
+  /* for media */
   font-weight: 300;
 }
 
 /* Header area ^^^^ */
 
 /* Main area */
+
+
 .partner-item {
+  margin: 0 auto;
   text-align: center;
+  width: 220px;
 }
 
 .partner-section-header {
@@ -144,12 +200,14 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  /* min-width: 225px; for media */
+  min-width: 280px;
+  /*  for media */
   height: 40px;
   background-color: #ff4e50;
   border-radius: 30px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .partners-button {
@@ -159,11 +217,68 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  /* width: 193px; for media */
+  min-width: 280px;
+  /* for media */
   height: 40px;
   border: 2px solid #ff4e50;
   border-radius: 30px;
   background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: bacground-color, color .3s linear;
 }
+
+.partners-button:hover,
+.partners-button:focus {
+  background-color: #ff4e50;
+  color: #ffffff;
+  transition: bacground-color, color .3s linear;
+}
+
+/* ICON */
+.partner-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.partner-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 34px;
+  height: 34px;  
+  background-size: auto;
+  background-repeat: no-repeat;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+
+.tv-icon {
+background-color: #ff4e50;
+background-image: url(../img/tv-icon.png);
+background-position: center ;
+}
+
+.bottle-icon {
+  background-color: #ffa507;
+  background-image: url(../img/botle-icon.png);
+  background-position: center;
+}
+
+.coffe-icon {
+  background-color: #1cd7ad;
+  background-image: url(../img/coffe-icon.png);
+  background-position: center 30%;
+}
+
+.telegram-icon {
+  background-color: #4e73db;
+  background-image: url(../img/telegram-icon.png);
+  background-position: 35% center;
+}
+/* ICON ^^^^ */
 
 /* Main area ^^^^ */
