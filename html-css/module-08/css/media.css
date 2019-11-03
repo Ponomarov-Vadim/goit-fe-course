@@ -128,7 +128,9 @@
 
 @media screen and (min-width: 940px) {
     .wrapper {
-        width: 942px;
+        width: 920px;
+        padding: 0;
+        min-height: auto;
     }
 
     .site-header {
@@ -143,11 +145,13 @@
     .partner-list {
         padding-top: 32px;
         padding-bottom: 38px;
-        width: 942px;
+        width: 910px;
         flex-wrap: nowrap;
+        min-height: 234px;
     }
 
-    .partner-list {
-        min-height: 234px;
+    .partner-item {
+        width: 220px;
+        padding: 0;
     }
 }
