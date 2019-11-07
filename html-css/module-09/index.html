@@ -5,13 +5,8 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,31 +14,48 @@
     <title>URLAUBSGLÜCK</title>
   </head>
   <body>
-    <header>
-      <div class="wrapper">
-        <div class="overlay"></div>
-        <section class="header-content">
-          <div class="site-header">
-            <div class="authorize">
-              <a href="#" class="authorize-link">Log in</a>
+        <div class="container-fluid">          
+          <div class="row">
+              <div class="col-12">
+                <div class="overlay"></div>
+                <header>
+                  <div class="row text-align-center">
+                    <div class="col-12 justify-content-center pb-5">
+                        <div class="authorize">
+                            <a href="#" class="authorize-link">Log in</a>
+              
+                            <a href="#" class="authorize-link">Sing up</a>
+                          </div>
+                    </div>
+                    <div class="col-12 pt-5 pb-4">
+                        <a class="site-logo"></a>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-12 mb-4">
+                        <h2 class="header-section">Share your holiday dreams</h2>
+                    </div>
+                    <div class="col-12 mb-4 px-5">
+                        <p class="header-text">
+                            And find the perfect partner to fullfill it
+                          </p>
+                    </div>
+                    <div class="col-12">
+                        <button class="header-button site-button">
+                            Find your holiday partner
+                          </button>
+                    </div>
+                  </div>
+              </header>
+              </div>
+          </div>
+        </div>
+        <div class="container">
 
-              <a href="#" class="authorize-link">Sing up</a>
-            </div>
-            <h1 class="site-logo">urlaubsglück</h1>
-          </div>
-          <div class="header-content-section">
-            <h2 class="header-section">Share your holiday dreams</h2>
-            <p class="header-text">
-              And find the perfect partner to fullfill it
-            </p>
-            <button class="header-button site-button">
-              Find your holiday partner
-            </button>
-          </div>
-        </section>
-      </div>
-    </header>
-    <main>
+        </div>
+
+    <!-- 
+      <main>
       <section class="partner-section wrapper">
         <h3 class="partner-section-header">
           Meet a partner for your best holiday
@@ -121,6 +133,6 @@
         </ul>
         <button class="partners-button  site-button">See other partners</button>
       </section>
-    </main>
+    </main> -->
   </body>
 </html>

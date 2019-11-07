@@ -40,14 +40,7 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  width: 302px;
-  min-height: 540px;
-  padding: 0 14px;
-  margin: auto;
-}
-
-header {
+.container-fluid {
   position: relative;
   min-height: 540px;
   width: 100%;
@@ -61,7 +54,7 @@ header {
 
 .overlay {
   position: absolute;
-  height: 100%;
+  min-height: 540px;
   width: 100%;
   top: 0;
   left: 0;
@@ -71,21 +64,9 @@ header {
 
 
 /* Header area*/
-.site-header {
-  margin: 0 auto;
-  text-align: center;
-}
 
-.header-content-section {
- margin: 0 auto;
-}
-
-.header-content {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+header {
+  padding-top: 20px;
 }
 
 .authorize-link {
@@ -103,26 +84,21 @@ header {
 }
 
 .authorize-link:hover {
-  text-decoration: none;
   border: 2px solid #fff;
   text-decoration: none;
 }
 
-.authorize {
-  display: inline-block;
+.text-align-center {
   text-align: center;
 }
 
 .site-logo {
   position: relative;
-  transform: translateY(15%);
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  display: block;
+  width: 177px;
+  height: 20px;
+  margin: 0 auto;
+  background-image: url(../img/site-logo.png);
   cursor: pointer;
 }
 
