@@ -106,7 +106,7 @@ header {
   text-align: center;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -127,7 +127,6 @@ header {
 .partner-item {
   margin: 0 auto;
   text-align: center;
-  width: 220px;
 }
 
 .partner-img {
@@ -136,6 +135,16 @@ header {
   height: 120px;
   margin: auto;
   overflow: hidden;
+  margin-bottom: 20px;
+}
+
+img {
+  
+  transition: all .2s linear;
+}
+
+.partner-item:hover img {
+  transform: scale(1.015);
 }
 
 .partner-section-header {
@@ -151,6 +160,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
+  margin-bottom: 16px;
 }
 
 .partner-info {
