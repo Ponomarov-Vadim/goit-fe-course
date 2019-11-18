@@ -8,11 +8,7 @@ html {
 *::after {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
-}
-
-#svg {
-    display: none;
-}
+}   
 
 body {
     margin: 0;
