@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MoGo</title>
+    <!-- Для обеспечения некоторой доли кроссбраузерости подключаем normalize.css.
+- Сделать верстку страницы, используя BEM-именование для классов, выделить повторяющиеся компоненты.
+- Изображения из секции Meet our team и фоновое изображение верхней части страницы подготовить к retina экранам, достаточно 1x и 2x.
+- Интерактивные иконки в макете сделать используя внешний SVG-спрайт. Реализовать эффект hover на иконках карточек.
+- Иконки взять из макета.
+- Добавить вендорные префиксы, используя Autoprefixer.
+- Оптимизировать изображения, используя сервис http://optimizilla.com/ или https://pnggauntlet.com/ для растровых.
+https://jakearchibald.github.io/svgomg/ для векторных изображений. -->
+
+  </head>
+  <body>
+    <header class="wrapper">
+      <nav class="main-nav">
+        <a class="site-logo" href="#"
+          ><img src="./img/MoGo.png" alt="Mogo" width="86" height="23"
+        /></a>
+        <ul class="menu">
+          <li class="menu-item"><a href="#" class="menu-link">about</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">service</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">work</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">blog</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">contact</a></li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="service wrapper">
+        <h2 class="section-header">We work with</h2>
+        <h3 class="section-header-text">Amazing Services</h3>
+        <ul class="service-list">
+          <li class="service-item photography">
+            <h3 class="service-item--header">Photography</h3>
+            <p class="service-item--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="service-item web-design">
+            <h3 class="service-item--header">Web Design</h3>
+            <p class="service-item--text">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </li>
+          <li class="service-item creativity">
+            <h3 class="service-item--header">Creativity</h3>
+            <p class="service-item--text">
+              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </li>
+          <li class="service-item seo">
+            <h3 class="service-item--header">seo</h3>
+            <p class="service-item--text">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+            </p>
+          </li>
+          <li class="service-item css-html">
+            <h3 class="service-item--header">Css/Html</h3>
+            <p class="service-item--text">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+            </p>
+          </li>
+          <li class="service-item digital">
+            <h3 class="service-item--header">digital</h3>
+            <p class="service-item--text">
+              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="team wrapper">
+        <h2 class="section-header">Who we are</h2>
+        <h3 class="section-header-text">Meet our team</h3>
+        <p class="section-info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+          nobis, tenetur eveniet necessitatibus dignissimos nemo obcaecati
+          blanditiis pariatur provident, veniam sint dolores mollitia modi ut
+          ipsa magnam sit? Fugit officia vel cupiditate fugiat magni rem.
+        </p>
+        <div class="team-list">
+          <div class="team-item">
+            <div class="team-img-item">
+              <div class="overlay">
+                <ul class="team-list-socials">
+                  <li class="socials-item">
+                    <a href="#" class="socials-link facebook">facebook</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link twitter">twitter</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link pinterest">pinterest</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link instagram">instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <img
+                src="./img/Mathew.png"
+                alt="Graphic Designer"
+                class="team-img"
+                width="380"
+                height="470"
+              />
+            </div>
+            <h3 class="team-name">Matthew Dix</h3>
+            <h4 class="team-position">Graphic Design</h4>
+          </div>
+          <div class="team-item">
+            <div class="team-img-item">
+              <div class="overlay">
+                <ul class="team-list-socials">
+                  <li class="socials-item">
+                    <a href="#" class="socials-link facebook">facebook</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link twitter">twitter</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link pinterest">pinterest</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link instagram">instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <img
+                src="./img/Cristopher.png"
+                alt="Branding/UX designer"
+                class="team-img"
+                width="380"
+                height="470"
+              />
+            </div>
+            <h3 class="team-name">Christopher Campbell</h3>
+            <h4 class="team-position">Branding/UX design</h4>
+          </div>
+          <div class="team-item">
+            <div class="team-img-item">
+              <div class="overlay">
+                <ul class="team-list-socials">
+                  <li class="socials-item">
+                    <a href="#" class="socials-link facebook">facebook</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link twitter">twitter</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link pinterest">pinterest</a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="socials-link instagram">instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <img
+                src="./img/Michael.png"
+                alt="Developer"
+                class="team-img"
+                width="380"
+                height="470"
+              />
+            </div>
+            <h3 class="team-name">Michael Fertig</h3>
+            <h4 class="team-position">Developer</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer wrapper">
+      <span class="footer-text">
+        © 2016 MoGo free PSD template by
+        <a class="footer-link" href="#">Laaqiq</a>
+      </span>
+      <div class="input-elements">
+        <input
+          class="footer-textbox"
+          type="text"
+          name="email"
+          id="1"
+          value="Your Email..."
+        />
+        <button class="footer-button">subscribe</button>
+      </div>
+    </footer>
+  </body>
+</html>
