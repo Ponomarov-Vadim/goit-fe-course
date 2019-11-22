@@ -1,0 +1,12 @@
+.header-button {
+  width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  color: $primary-white-color;
+  @extend %Montserrat-bold;
+  outline: none;
+  display: block;
+  cursor: pointer;
+}

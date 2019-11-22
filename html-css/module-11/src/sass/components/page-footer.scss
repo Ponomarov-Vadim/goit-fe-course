@@ -1,0 +1,47 @@
+.page-footer {
+  min-height: 62px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    color: $primary-black-color;
+    @extend %Montserrat-regular;
+    text-transform: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    @extend %Montserrat-regular;
+    text-transform: none;
+    color: $secondary-accent-color;
+  }
+
+  &__form {
+    font-size: 0;
+  }
+
+  &__textbox {
+    color: #cccccc;
+    @extend %Roboto-regular;
+    text-align: left;
+    font-style: italic;
+    width: 230px;
+    height: 40px;
+    padding: 14px;
+    border: 1px solid #e7e7e7;
+    background-color: $primary-white-bg-color;
+  }
+
+  &__button {
+    width: 150px;
+    height: 40px;
+    background-color: $primary-colored-bg-color;
+    outline: none;
+    border: none;
+    color: $primary-white-color;
+    @extend %Montserrat-bold;
+    cursor: pointer;
+  }
+}

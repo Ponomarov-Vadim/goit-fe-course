@@ -1,0 +1,10 @@
+@mixin generate-icons($baseclass, $list, $path, $ext) {
+  @each $icon in $list {
+    .#{$baseclass}#{$icon} {
+      display: block;
+      background-image: url(#{$path}#{$icon}.#{$ext});
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

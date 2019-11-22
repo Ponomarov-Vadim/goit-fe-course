@@ -1,0 +1,24 @@
+.section__text {
+  width: 315px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  color: $primary-black-color;
+  @extend %Montserrat-bold;
+  text-align: center;
+
+  &--after::after {
+    content: "";
+    background: $secondary-accent-color;
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: 42px auto 0;
+  }
+
+  &--big-white {
+    color: $primary-white-color;
+    font-size: 150px;
+    width: 840px;
+    margin-bottom: 96px;
+  }
+}

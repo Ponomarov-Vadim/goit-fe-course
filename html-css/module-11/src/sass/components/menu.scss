@@ -1,0 +1,49 @@
+.menu {
+  min-width: 620px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__item {
+    text-decoration: none;
+  }
+
+  &__link--icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    fill: $primary-white-color;
+
+    &:hover,
+    &:focus {
+      fill: $primary-accent-color;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding: 0;
+    color: $primary-white-color;
+    @extend %Montserrat-regular;
+    text-decoration: none;
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: $primary-accent-color;
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      background-color: $primary-accent-color;
+      width: 100%;
+      height: 3px;
+      display: block;
+    }
+  }
+}

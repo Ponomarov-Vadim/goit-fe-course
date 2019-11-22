@@ -1,0 +1,70 @@
+.team {
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &--img {
+      margin: 0 0 31px;
+      background-color: $primary-colored-bg-color;
+      font-size: 0;
+      min-height: 470px;
+      min-width: 380px;
+      position: relative;
+    }
+
+    &--img:hover .team__img {
+      transform: translate(-10px, -10px);
+    }
+  }
+
+  &__img {
+    transition: transform 200ms linear;
+  }
+
+  &__info {
+    color: $secondary-black-color;
+    @extend %Roboto-regular;
+    margin: 0 auto 92px;
+    width: 941px;
+    padding: 0;
+  }
+
+  &__name {
+    margin: 0 auto 15px;
+    padding: 0;
+    color: $primary-black-color;
+    @extend %Montserrat-regular;
+  }
+
+  &__overlay {
+    position: absolute;
+    z-index: 1;
+    min-width: 380px;
+    min-height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    transition: opacity 200ms linear, transform 200ms linear;
+
+    &:hover {
+      transform: translate(-10px, -10px);
+      opacity: 1;
+    }
+  }
+
+  &__position {
+    margin: 0 auto;
+    padding: 0;
+    color: $secondary-black-color;
+    @extend %Roboto-regular;
+    font-style: italic;
+  }
+}

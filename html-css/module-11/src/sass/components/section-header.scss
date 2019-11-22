@@ -1,0 +1,19 @@
+.section__header {
+  margin: 0 auto;
+  width: 315px;
+  color: $primary-black-color;
+  @extend %Kaushan-set;
+  margin-bottom: 22px;
+
+  &--first-letter::first-letter {
+    text-transform: uppercase;
+  }
+
+  &--big-white {
+    font-size: 72px;
+    color: $primary-white-color;
+    width: 802px;
+    margin-bottom: 32px;
+    text-transform: capitalize;
+  }
+}

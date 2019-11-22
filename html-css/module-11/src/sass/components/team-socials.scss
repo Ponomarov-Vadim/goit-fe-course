@@ -1,0 +1,33 @@
+.team-socials {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item:not(:last-child) {
+    border-right: 1.1px solid #f38181;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link:hover .team-socials__icon {
+    background-color: $secondary-accent-color;
+    fill: $primary-white-color;
+  }
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    fill: $secondary-accent-color;
+    background-color: $primary-accent-color;
+    padding: 15px;
+    transition: background-color 200ms linear;
+  }
+}

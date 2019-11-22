@@ -1,0 +1,41 @@
+$primary-white-color: #ffffff;
+
+$primary-colored-bg-color: #95e1d3;
+$primary-white-bg-color: #ffffff;
+
+$primary-accent-color: #fce38a;
+$secondary-accent-color: #f38181;
+
+$primary-black-color: #333333;
+$secondary-black-color: #999999;
+
+$icons: "photography", "web-design", "creativity", "seo", "css-html", "digital";
+
+%Kaushan-set {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+%Roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+%Montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+%Montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
