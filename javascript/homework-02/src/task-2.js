@@ -1,8 +1,8 @@
 "use strict";
-function calculateEngravingPrice(message, pricePerWorld) {
+const calculateEngravingPrice = function(message, pricePerWorld) {
   let worldsArray = message.split(" ");
   return worldsArray.length * pricePerWorld;
-}
+};
 
 console.log(
   calculateEngravingPrice(

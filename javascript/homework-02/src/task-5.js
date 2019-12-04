@@ -1,6 +1,6 @@
 "use strict";
 
-function checkForSpam(str) {
+const checkForSpam = function(str) {
   if (
     str.toLowerCase().includes("spam") ||
     str.toLowerCase().includes("sale")
@@ -9,7 +9,7 @@ function checkForSpam(str) {
   } else {
     return false;
   }
-}
+};
 
 console.log(checkForSpam("Latest technology news")); // false
 

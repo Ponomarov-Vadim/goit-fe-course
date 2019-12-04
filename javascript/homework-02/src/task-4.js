@@ -1,6 +1,6 @@
 "use strict";
 
-function formatString(string) {
+const formatString = function(string) {
   let str;
   if (Number(string.length) > 40) {
     str = string.slice(0, 40);
@@ -8,7 +8,7 @@ function formatString(string) {
     return str;
   }
   return string;
-}
+};
 
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));
 // вернется оригинальная строка
